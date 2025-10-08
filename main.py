@@ -7,9 +7,9 @@ st.write('hello')
 def login_screen():
     st.header("This app is private.")
     st.subheader("Please log in.")
-    st.login('google')
+    if st.button('press'):
+        st.login('google')
     if not st.user.is_logged_in:
-        
         st.write(st.user)
     # st.button("Log in with Google", on_click=st.login('google'))
 # if not st.user.is_logged_in:
