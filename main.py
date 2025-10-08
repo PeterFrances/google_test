@@ -1,7 +1,7 @@
 import streamlit as st
 
 if st.button("Log in"):
-    st.login()
+    st.login(provider="google")
 if st.user.is_logged_in:
     if st.button("Log out"):
         st.logout()
