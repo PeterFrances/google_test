@@ -1,2 +1,1 @@
-streamlit
-authlib
+streamlit==1.50.0
