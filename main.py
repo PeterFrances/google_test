@@ -11,7 +11,7 @@ try:
     user_email = st.experimental_user.email
 except:
     user_email = ""
-st.write(user_email)
+st.write(st.user)
 
 # import streamlit as st
 # if st.button('press'):
