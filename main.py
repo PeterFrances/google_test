@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Check if user is logged in using the is_logged_in attribute
+# Check if user is logged in
 if hasattr(st.user, 'is_logged_in') and st.user.is_logged_in:
     st.write(f"Hello, {st.user.name}!")
     st.write("Your email:", st.user.email)
@@ -9,12 +9,12 @@ if hasattr(st.user, 'is_logged_in') and st.user.is_logged_in:
         st.logout()
     
     # Display all user info
-    st.write("User details:")
-    st.write(st.user.to_dict())
+    with st.expander("See full user details"):
+        st.write(st.user.to_dict())
 else:
     st.write("Please log in to continue")
     if st.button("Log in with Google"):
-        st.login('google')
+        st.login('google')  # Using named provider
 # import streamlit as st
 # if st.button('press'):
 #     st.logout()
