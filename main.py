@@ -8,3 +8,5 @@ else:
     if st.button("Log out"):
         st.logout()
     st.write(f"Hello, {st.user.name}!")
+st.write(st.user)
+st.write(f"Hello, {st.user.name}!")
