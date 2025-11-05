@@ -11,8 +11,8 @@ try:
     user_email = st.experimental_user.email
 except:
     user_email = ""
-st.write(st.user.to_dict)
-
+st.user.to_dict
+st.user
 # import streamlit as st
 # if st.button('press'):
 #     st.logout()
