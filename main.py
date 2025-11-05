@@ -2,14 +2,16 @@ import streamlit as st
 
 # Get the user's email (only works in Streamlit Cloud with invited viewers)
 user_info = st.context.cookies
-user_email = st.context.headers.get("Cf-Access-Authenticated-User-Email", "")
+st.write(user_info)
 
+user_email = st.context.headers.get("Cf-Access-Authenticated-User-Email", "")
+st.write(user_email)
 # For newer Streamlit versions (1.28+):
 try:
     user_email = st.experimental_user.email
 except:
     user_email = ""
-
+st.write(user_email)
 
 # import streamlit as st
 # if st.button('press'):
