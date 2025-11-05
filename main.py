@@ -1,19 +1,21 @@
 import streamlit as st
 
-# Check if user is logged in by checking if email exists
-if st.user.email:
-    st.write(f"Hello, {st.user.name}!")
-    if st.button("Log out"):
-        st.logout()
-    
-    # Display user info
-    st.write("User details:")
-    st.write(st.user)
-else:
-    st.write("Please log in to continue")
-    if st.button("Log in with Google"):
-        st.login('google')
+st.write("Debugging st.user:")
+st.write(st.user)
+st.write("Type:", type(st.user))
+st.write("Dir:", dir(st.user))
 
+# Try to access available attributes
+try:
+    st.write("Has email?", hasattr(st.user, 'email'))
+except Exception as e:
+    st.write("Error checking email:", e)
+
+if st.button("Log in with Google"):
+    st.login('google')
+
+if st.button("Log out"):
+    st.logout()
 # import streamlit as st
 # if st.button('press'):
 #     st.logout()
