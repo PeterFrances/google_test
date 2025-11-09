@@ -32,6 +32,8 @@ if hasattr(st.user, 'is_logged_in') and st.user.is_logged_in:
         if st.button("🚪 Log out", type="primary", use_container_width=True):
             st.logout()
 
+st.write('hello to my world ')
+st.write('hello to my world ')
 # ============================================================================
 # If code reaches here, user is LOGGED IN and AUTHORIZED
 # Your full app code continues below...
