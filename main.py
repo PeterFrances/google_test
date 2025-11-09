@@ -17,7 +17,7 @@ if hasattr(st.user, 'is_logged_in') and st.user.is_logged_in:
     if user_email not in allowed_emails:
         # Email NOT in allowed list - show access denied
         st.error("🚫 Access Denied")
-        st.warning(f"Your email **{user_email}** is not authorized to access this application.")
+        st.warning(f"Your email **{user_email}** is not authorized to access products portal.")
         st.info("Please contact the administrator if you believe this is an error.")
         
         # Show logout button for unauthorized users
