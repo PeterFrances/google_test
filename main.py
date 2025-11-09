@@ -16,5 +16,4 @@ else:
     if st.button("Log in with Google"):
         st.login('google')  # Using named provider
         
-st.write(st.secrets)
-st.secrets
+
