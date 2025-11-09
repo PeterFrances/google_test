@@ -22,7 +22,6 @@ if hasattr(st.user, 'is_logged_in') and st.user.is_logged_in:
         
         # Show logout button for unauthorized users
         with st.sidebar:
-            st.markdown("<br>" * 25, unsafe_allow_html=True)
             if st.button("🚪 Log out", type="primary", use_container_width=True):
                 st.logout()
         
@@ -30,7 +29,6 @@ if hasattr(st.user, 'is_logged_in') and st.user.is_logged_in:
     
     # Email IS in allowed list - show logout button in sidebar
     with st.sidebar:
-        st.markdown("<br>" * 25, unsafe_allow_html=True)
         if st.button("🚪 Log out", type="primary", use_container_width=True):
             st.logout()
 
