@@ -24,8 +24,9 @@ if hasattr(st.user, 'is_logged_in') and st.user.is_logged_in:
         with st.sidebar:
             if st.button("🚪 Log out", type="primary", use_container_width=True):
                 st.logout()
-        
+        st.write('hi')
         st.stop()  # CRITICAL - Stop here, don't show any app content
+        st.write('hi')
     
     # Email IS in allowed list - show logout button in sidebar
     with st.sidebar:
