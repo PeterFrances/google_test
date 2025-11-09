@@ -1,5 +1,5 @@
 import streamlit as st
-st.switch_page("login.py")
+st.switch_page("pages/2_Customers.py")
 
 # import streamlit as st
 
