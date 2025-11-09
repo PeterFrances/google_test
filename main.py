@@ -3,7 +3,7 @@ import streamlit as st
 import streamlit as st
 
 # Define allowed emails
-allowed_emails = ['p.romany@cleolaboratorie.com', 'email2@example.com', 'email3@gmail.com']
+allowed_emails = ['p.romany@cleolaboratories.com', 'email2@example.com', 'email3@gmail.com']
 
 # Check if user is logged in
 if not (hasattr(st.user, 'is_logged_in') and st.user.is_logged_in):
